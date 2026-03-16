@@ -11,6 +11,31 @@
   <br>
 </div> -->
 
+# RealBasicVSR (CVPR 2022)
+
+<!-- \[[Paper](https://arxiv.org/pdf/2111.12704.pdf)\] -->
+
+This is the official repository of "TextOVSR: Text-Guided Real-World Opera Video Super-Resolution". This repository contains *codes*, *configs*, *datas* of our work.
+
+**Authors**: [Hua Chang](https://github.com/ChangHua0), [Xin Xu](https://scholar.google.com/citations?user=DtuoAWIAAAAJ&hl=zh-CN), [Wei Liu](https://scholar.google.com/citations?user=EibZ-p8AAAAJ&hl=zh-CN), [Jiayi Wu], [Kui Jiang](https://scholar.google.com/citations?user=AbOLE9QAAAAJ&hl=zh-CN&oi=sra), [Fei Ma], [Qi Tian], 
+
+## News
+- 16 Mar 2026: Code released
+- 10 Mar 2026: This repository created
+- 21 feb 2026: Our paper has been accepted to CVPR 2022
+
+## Table of Content
+1. [Motivation](#Motivation)
+2. [TextOVSR](#TextOVSR)
+3. [Quantitative Results](#Quantitative-Results)
+4. [Qualitative Results](#Qualitative-Results)
+5. [Code](#Code)
+6. [Inference](#Inference)
+7. [Training](#Training)
+8. [OperaLQ Dataset](#OperaLQ-Dataset)
+9. [Acknowledgement](#Acknowledgement)
+
+
 ### **Motivation**
 
 </summary>
@@ -22,7 +47,7 @@
 <details open>
 <summary>
 
-### **TextOVSR pipeline**
+### **TextOVSR**
 
 </summary>
 
@@ -33,11 +58,6 @@
 <details open>
 <summary>
 
-## Get Started
-
-## Main Results
-<details open>
-<summary>
 
 ### **Quantitative Results**
 
@@ -60,6 +80,7 @@
 
 
 ##  Code
+
 ### Environment Setup
 **Dependencies**: 
   - CUDA 11.8
