@@ -82,7 +82,7 @@
 
 
 ### Inference
-Before running the inference code, copy the code from the Python files in the `codes` directory to the `mmedit` package in your execution environment. For example, copy `codes/basicvsr_net.py` to `/.conda/envs/textovsr/lib/python3.9/site-packages/mmedit/models/backbones/sr_backbones/basicvsr_net.py`. The target path for `codes/unet_disc.py` is `/. conda/envs/textovsr/lib/python3.9/site-packages/mmedit/models/components/discriminators/unet_disc.py.
+Before running the inference code, copy the code from the Python files in the `codes` directory to the `mmedit` package in your execution environment. For example, copy `codes/basicvsr_net.py` to `/.conda/envs/textovsr/lib/python3.9/site-packages/mmedit/models/backbones/sr_backbones/basicvsr_net.py`. The target path for `codes/unet_disc.py` is `/. conda/envs/textovsr/lib/python3.9/site-packages/mmedit/models/components/discriminators/unet_disc.py`.
 
   1. Download the [pre-trained model](https://pan.baidu.com/s/1wDTn0bYAHPOupexb8JhvWA) Code[9527]
     <!-- Pre-training models will be disclosed later -->
@@ -113,7 +113,7 @@ The training is divided into two stages:
 nohup mim train mmedit configs/textovsr_wogan_c64b20_2x30x8_lr1e-4_100k_opera.py --gpus 1 --launcher none >> train_textovsr_stage1.out 2>&1 &
 ```
 
-2. Finetune the model with perceptual loss, adversarial loss and clipiqa loss using [textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py](textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py). (You may want to replace `load_from` in the configuration file with your checkpoints pre-trained at the first stage
+2. Finetune the model with perceptual loss, adversarial loss and clipiqa loss using [configs/textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py](configs/textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py). (You may want to replace `load_from` in the configuration file with your checkpoints pre-trained at the first stage
 ```
 nohup mim train mmedit configs/textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py --gpus 1 --launcher none >> train_textovsr_stage2.out 2>&1 &
 
