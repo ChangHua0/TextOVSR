@@ -11,18 +11,18 @@
   <br>
 </div> -->
 
-# RealBasicVSR (CVPR 2022)
+# TextOVSR (CVPR 2026)
 
 <!-- \[[Paper](https://arxiv.org/pdf/2111.12704.pdf)\] -->
 
 This is the official repository of "TextOVSR: Text-Guided Real-World Opera Video Super-Resolution". This repository contains *codes*, *configs*, *datas* of our work.
 
-**Authors**: [Hua Chang](https://github.com/ChangHua0), [Xin Xu](https://scholar.google.com/citations?user=DtuoAWIAAAAJ&hl=zh-CN), [Wei Liu](https://scholar.google.com/citations?user=EibZ-p8AAAAJ&hl=zh-CN), [Jiayi Wu], [Kui Jiang](https://scholar.google.com/citations?user=AbOLE9QAAAAJ&hl=zh-CN&oi=sra), [Fei Ma], [Qi Tian], 
+**Authors**: [Hua Chang](https://github.com/ChangHua0), [Xin Xu](https://scholar.google.com/citations?user=DtuoAWIAAAAJ&hl=zh-CN), [Wei Liu](https://scholar.google.com/citations?user=EibZ-p8AAAAJ&hl=zh-CN), Jiayi Wu, [Kui Jiang](https://scholar.google.com/citations?user=AbOLE9QAAAAJ&hl=zh-CN&oi=sra), Fei Ma, Qi Tian, 
 
 ## News
-- 16 Mar 2026: Code released
-- 10 Mar 2026: This repository created
-- 21 feb 2026: Our paper has been accepted to CVPR 2022
+- 16 Mar 2026: Code released 👉 [![GitHub Stars](https://github.com/ChangHua0/TextOVSR?style=social)](https://github.com/ChangHua0/TextOVSR)
+- 10 Mar 2026: This repository created 
+- 21 feb 2026: Our paper has been accepted to **CVPR 2026** 🎉🎉🎉
 
 ## Table of Content
 1. [Motivation](#Motivation)
