@@ -47,6 +47,17 @@ This is the official repository of "TextOVSR: Text-Guided Real-World Opera Video
 <details open>
 <summary>
 
+### **Text Generation**
+
+</summary>
+
+![results3](./datas/text_gen.png)
+
+</details>
+
+<details open>
+<summary>
+
 ### **TextOVSR**
 
 </summary>
@@ -128,6 +139,7 @@ Before running the inference code, copy the code from the Python files in the `c
   ```
 
 ### Training
+
 The training is divided into two stages:
 1. Train a model without perceptual loss, adversarial loss and clipiqa loss using [configs/textovsr_wogan_c64b20_2x30x8_lr1e-4_100k_opera.py](configs/textovsr_wogan_c64b20_2x30x8_lr1e-4_100k_opera.py).
 ```
@@ -139,6 +151,12 @@ nohup mim train mmedit configs/textovsr_wogan_c64b20_2x30x8_lr1e-4_100k_opera.py
 nohup mim train mmedit configs/textovsr_c64b20_1x30x8_lr5e-5_150k_opera.py --gpus 1 --launcher none >> train_textovsr_stage2.out 2>&1 &
 
 ```
+#### Text Generation
+This step requires configuring **LLaVA**. The following prompt is used for text generation:
+```
+"Please analyze the uploaded images in detail and generate descriptions strictly according to the following requirements. Identify all major objects: List all prominent objects in the image (such as people, animals, items, background elements). Describe relative position: Use spatial relationship words (such as left/right, top/bottom, middle, corner, foreground/background, near/far) to clearly indicate the positional relationship of objects. Structural requirement: Generate a single paragraph with logical coherence, without the need for punctuation or line breaks. Concise and precise language, avoiding subjective speculation (such as emotions or intentions)"
+```
+
 
 ## OperaLQ Dataset
 You can download the dataset using [OperaLQ](https://pan.baidu.com/s/18GfJaSRcnVX5X6cEgLuDlg) Code[9527].
